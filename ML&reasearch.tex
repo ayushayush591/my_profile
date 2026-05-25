@@ -1,0 +1,260 @@
+ \documentclass[a4paper,10pt]{article}
+
+\usepackage[top=0.75in, bottom=0.5in, left=0.30in, right=0.50in]{geometry}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{booktabs}
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[utf8]{inputenc}
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+\usepackage{color}
+\definecolor{lightgray}{rgb}{0.83, 0.83, 0.83}
+\definecolor{gainsboro}{rgb}{0.86, 0.86, 0.86}
+\usepackage{color, colortbl}
+\definecolor{Gray}{gray}{0.94}
+\usepackage{multicol}
+\hypersetup{
+    hidelinks,
+    pdfauthor={Abhishek Kumar Singh},
+    pdftitle={Abhishek Kumar Singh - Machine Learning and Research Resume}
+}
+
+\textheight=10in
+\raggedbottom
+\setlength{\tabcolsep}{0in}
+\newcommand{\isep}{-2 pt}
+\newcommand{\sectsep}{-0.3cm}
+\newcommand{\lsep}{-0.5cm}
+\newcommand{\psep}{-0.5cm}
+\newcommand{\hsep}{-0.6cm}
+\newcommand{\bsep}{-0.55cm}
+\renewcommand{\labelitemii}{$\circ$}
+
+\pagestyle{empty}
+
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}} 
+\newcommand{\resheading}[1]{{\small \colorbox{lightgray}{\begin{minipage}{0.975\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+ 
+\newcommand{\ressubheading}[3]{
+\begin{tabular*}{6.62in}{l @{\extracolsep{\fill}} r}
+    \textsc{{\textbf{#1}}} & \textsc{\textit{[#2]}} \\
+\end{tabular*}\vspace{-8pt}}
+
+
+\begin{document}
+\vspace*{49 mm}
+% Blank white space for the header to be added by placement team
+  \hspace{0.1em}\\ % also use up a newline
+  % \vspace{2.7cm}\\ % the remaining free space.
+
+\begin{table}
+    \begin{minipage}{0.15\linewidth}
+        \centering
+        \includegraphics[height =0.8in]{iit_logo.eps}
+    \end{minipage}
+    \begin{minipage}{0.65\linewidth}
+        %\centering
+        \setlength{\tabcolsep}{60pt}
+        \def\arraystretch{1.15}
+        \begin{tabular}{ll}
+            \textbf{\huge{Abhishek Kumar Singh}} \\
+            \hspace{-0.5em}\small +91-945-001-9819 $|$ \href{mailto:ayushayush591@gmail.com}{\underline{ayushayush591@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/abhishek-kumar-singh-281036146}{\underline{LinkedIn}}
+        \end{tabular}
+    \end{minipage}\hfill
+\end{table}    
+
+\setlength{\tabcolsep}{19pt}
+\begin{table}
+\centering
+\begin{tabular}{lllll}
+\toprule
+\textbf{Examination}    & \textbf{Degree}   & \textbf{Institute}    & \textbf{Year}     & \textbf{CPI/\%} \\ 
+\toprule
+Post Graduation (CSE) & MS By Research    & IIT Bombay    & 2022-25   & 8.48 \\  
+Graduation (CSE) & BTech & REC Sonbhadra & 2018-22   & 8.13\\ 
+\bottomrule \\[-0.75cm]
+\end{tabular}
+\end{table}
+\vspace{-6.3cm}
+
+\resheading{\textbf{ WORK EXPERIENCE \& COLLABORATION}}\\[\lsep] \\[-0.4cm]
+\vspace{0.3cm}
+
+\begin{itemize}[noitemsep,nolistsep]
+\item \textbf{Qualcomm, Bengaluru India} \hspace{0.5cm} \textit{\textbf{Open Source at-}} \href{https://github.com/quic/efficient-transformers}{\underline{Git-Hub Link}} \hfill\hfill {\emph{Machine Learning Engineer}}\\ \emph{Team : \textbf{Cloud ML (Model onboarding)}} | LLMs | Agents | Efficient Transformers \hfill
+\emph{(July'25 - Present)}
+\vspace{0.1cm}
+\begin{itemize}[noitemsep,nolistsep]
+    \item Delivered \textbf{60\% compile-time speedup} by adding subfunction support in Efficient Transformers.
+    \item Implemented \textbf{layer-wise execution} for large models (for example, Kimi K2.5), reducing peak memory to \textbf{<91 GB RAM} and enabling export of a 1 trillion-parameter model in \textbf{~1.5 hours}; \textbf{patent filing in progress}.
+    \item Performed a detailed analysis of \textbf{torch.compile} versus \textbf{torch.onnx.export} for model onboarding and deployment reliability.
+    \item Built \textbf{DocQGenie}, an agentic framework that auto-generates repository documentation from GitHub codebases (internal hackathon project).
+\end{itemize}
+\end{itemize}
+\vspace{0.2cm}
+
+\begin{itemize}[noitemsep,nolistsep]
+\item \textbf{IBM Research, Bengaluru India} \hspace{0.5cm} [\textit{\textbf{Published} at} : \textit{NAACL 2025}] \href{https://aclanthology.org/2025.findings-naacl.141/}{\underline{Paper Link}} \hfill {\emph{Research Intern AI}}\\
+\emph{Mentor: \textbf{Vishwajeet Kumar, Rudra Murthy, Ashish Mittal, Jaydeep Sen}} | LLMs | RAG \hfill
+\emph{(May'24 - Aug'24)}
+\vspace{0.1cm}
+\begin{itemize}[noitemsep,nolistsep]
+    \item Submitted \textbf{2 papers} during the internship and released a \textbf{large multilingual QA benchmark} to evaluate context-grounded question-answering in open-source multilingual LLMs.
+    \vspace{0.07cm}
+    \item Conducted a comparative study of \textbf{multilingual-query} and \textbf{translation-based} pipelines for Indian language QA systems.
+    \vspace{0.07cm}
+    \item Initiated a multi-LLM composition framework that combines model-specific strengths to improve multilingual QA performance (later extended as part of M.S. thesis work).
+    \vspace{0.07cm}
+\end{itemize}
+\end{itemize}
+\vspace{0.2cm}
+
+\resheading{\textbf{RESEARCH PROJECTS \& PUBLICATIONS}}\\[\lsep] \\[-0.4cm]
+
+\begin{itemize}
+\item \textbf{EIGEN: Expert-informed joint learning aggregation for high-fidelity information extraction from document images} \hspace{0.5cm} [\textit{\textbf{Published} at} : \textit{ML4H} (co-located with NeurIPS 2023)] \href{https://proceedings.mlr.press/v225/singh23a.html}{\underline{Paper Link}} \hfill \emph{M.S. Thesis}\\
+\emph{Guide: \textbf{Prof. Ganesh Ramakrishnan}} | NER | Information Extraction | SPEAR | PyTorch \hfill \emph{(Jan'23 - Jan'25)}\\[-0.5cm]
+\begin{itemize}[noitemsep,nolistsep]
+    \item Developed \textbf{CAGE}, an unsupervised token classification approach that reduces dependency on labeled training data.
+    \item Fine-tuned \textbf{LayoutLM} as a strong baseline for document-level token classification tasks.
+    \item Built a \textbf{joint learning framework} using \textbf{SPEAR}, leveraging semi-supervised learning to achieve state-of-the-art results.
+    \item Proposed a \textbf{joint LLM fine-tuning strategy} with data programming, improving extraction accuracy while reducing labeling effort and cost.
+    \item Automated \textbf{labeling-function generation} and developed a deployable workflow suitable for practical usage.
+\end{itemize}
+\end{itemize}
+
+\begin{itemize}
+\item \textbf{Composition of LLMs for Multilingual Question Answering} \hspace{0.5cm} [\textit{Collaboration with IBM Research}] \hfill \emph{M.S. Thesis}\\
+\emph{Guide: \textbf{Prof. Ganesh Ramakrishnan}} | Multilingual NLP | LLM Composition | RAG \hfill \emph{(May'24 - Jan'25)}\\[-0.5cm]
+\begin{itemize}[noitemsep,nolistsep]
+    \item Developed a composition strategy to combine multiple LLMs for improved multilingual question-answering performance.
+    \item Implemented ensemble strategies that leverage complementary strengths of diverse language models across 10+ Indic languages.
+    \item Achieved performance gains by combining model outputs using language-specific routing and selection heuristics.
+    \item Built a comprehensive evaluation framework for multilingual QA systems, with emphasis on zero-shot generalization.
+\end{itemize}
+\end{itemize}
+
+\resheading{\textbf{PROJECTS}}\\[\lsep] \\[-0.4cm]
+\vspace{0.3cm}
+
+\begin{itemize}[noitemsep,nolistsep]
+\item \textbf{Fair Diffusion: Mitigating Bias in Conditional Diffusion Models} \hfill {\emph{Advanced Machine Learning}}\\
+\emph{Guide: \textbf{Prof. Sunita Sarawagi}} | Generative Models | Debiasing | PyTorch   \hfill
+\emph{(Spring'23)}
+\vspace{0.1cm}
+\begin{itemize}[noitemsep,nolistsep]
+    \item Identified and mitigated bias issues in Conditional Denoising Diffusion Probabilistic Models.
+    \vspace{0.07cm}
+
+    \item Applied \textbf{supervised contrastive loss} to reduce bias in generated images.
+    \vspace{0.07cm}
+    
+    \item Conducted extensive experiments on correlated and imbalanced MNIST datasets with quantified fairness metrics.
+\end{itemize}
+
+\vspace{0.2cm}
+\item \textbf{Fact-Checking Claims from Wikipedia}  \hfill {\emph{Organization of Web Information}}\\
+\emph{Guide: \textbf{Prof. Soumen Chakrabarti}} | RAG | Retrieval \hfill
+\emph{(Spring'24)}
+\vspace{0.1cm}
+\begin{itemize}[noitemsep,nolistsep]
+    \item Implemented an embedding-based retrieval system using \textbf{Sentence Transformer} for Wikipedia data, achieving a Recall@100 of \textbf{0.707}.
+    \vspace{0.07cm}
+    \item Enhanced retrieval precision by integrating \textbf{cross-encoder} re-ranking and \textbf{Named Entity Recognition} (NER), reducing false positives by \textbf{28\%} across claim types.
+\end{itemize}
+\vspace{0.2cm}
+\item \textbf{Reverse Codex: Automatic Code Comment Generation} \hfill {\emph{Speech, NLP, and the Web}}\\
+\emph{Guide: \textbf{Prof. Pushpak Bhattacharyya}} | Bi-LSTM | Sequence-to-Sequence | PyTorch\hfill
+\emph{(Autumn'22)}
+\vspace{0.1cm}
+\begin{itemize}[noitemsep,nolistsep]
+    \item Developed an encoder-decoder model with attention for automatic Java code comment generation.
+    \vspace{0.07cm}
+    \item Implemented \textbf{Structured-Based Traversal (SBT)} for precise Abstract Syntax Tree (AST) navigation and code representation.
+    \vspace{0.07cm}
+    \item Achieved BLEU scores competitive with state-of-the-art models, demonstrating model efficacy.
+\end{itemize}
+
+\item \textbf{OCR to Speech Pipeline: End-to-End Document-to-Audio System} \hfill {\emph{Deep Learning for NLP}}\\
+\emph{Guide: \textbf{Prof. Pushpak Bhattacharyya}} | OCR | Summarization | Machine Translation | TTS \hfill
+\emph{(Spring'23)}
+\begin{itemize}[noitemsep,nolistsep]
+\vspace{0.1cm}
+    \item Fine-tuned pre-trained OCR models on the DocBank dataset and integrated PEGASUS for abstractive summarization.
+    \vspace{0.07cm}
+    
+    \item Built transformer-based neural machine translation on the CFLIT Hindi dataset for accurate cross-lingual translation.
+    \vspace{0.07cm}
+    
+    \item Implemented text-to-speech synthesis to complete the end-to-end document-to-audio pipeline.
+\end{itemize}
+
+\item \textbf{Breast Cancer Classifier} \hfill {\emph{Foundation of Machine Learning}}\\
+\emph{Guide: \textbf{Prof. Preethi Jyothi}} | CNN | SVM | Ensemble| PCA | Keras \hfill
+\emph{(Autumn'22)}
+\begin{itemize}[noitemsep,nolistsep]
+\vspace{0.1cm}
+    \item Conducted model comparisons across \textbf{SVM}, ensemble methods (\textbf{XGBoost}), and \textbf{CNN}.
+    \vspace{0.07cm}
+    
+    \item Employed \textbf{PCA} for dimensionality reduction on the \textbf{BreakHis} dataset.    
+    \vspace{0.07cm}
+
+    \item Determined CNN as the \textbf{optimal} performer.
+\end{itemize}
+\vspace{0.2cm}
+
+\item \textbf{Simulation of Mining Attacks on P2P Cryptocurrency network}  \hfill {\emph{Introduction to Blockchains, Cryptocurrencies}}\\
+\emph{Guide: \textbf{Prof. Vinay Ribeiro}} | Blockchain | Simulation  \hfill
+\emph{(Spring'24)}
+\vspace{0.1cm}
+\begin{itemize}[noitemsep,nolistsep]
+    \item Designed a \textbf{discrete-event} simulator for a \textbf{peer-to-peer} cryptocurrency network for 10-100 users.
+    \vspace{0.07cm}
+    \item Simulated \textbf{selfish mining} scenarios with \textbf{dual attackers} to assess their impact on blockchain integrity.
+    \vspace{0.07cm}
+    \item Evaluated the influence of varying miner \textbf{hash power} and \textbf{network delays} on transaction throughput and efficiency.
+\end{itemize}
+\vspace{0.15cm}
+\end{itemize}
+% \vspace{0.15cm}
+
+\resheading{\textbf{ TECHNICAL SKILLS}} \\[\lsep] \\[-0.4cm]
+\vspace{0.1cm}
+\begin{itemize}
+    \item \textbf{Programming Languages:} C, C++, Python, MATLAB, bash
+    \vspace{-0.19cm}
+    
+    \item \textbf{Development:} HTML, CSS, PHP, GitHub Actions
+    \vspace{-0.19cm}
+    
+    \item \textbf{Tools \& Libraries:} Git, Scikit-learn, PyTorch, Keras, Hugging Face Transformers, ONNX, \LaTeX
+    \vspace{-0.10cm}
+    % \item \textbf{Additional:} NLP, Image processing, Weak supervision.
+    % \vspace{-0.1cm}
+\end{itemize}
+\vspace{0.15cm}
+\resheading{\textbf{ACHIEVEMENTS AND EXTRA-CURRICULAR}}
+\vspace{-0.1cm}
+
+\begin{itemize}[noitemsep,nolistsep]
+    \vspace{0.25cm}
+    % \item Secured All India Rank \textbf{405} in GATE 2022 out of \textbf{77257} candidates.
+    \item Achieved a \textbf{99.47} percentile in GATE 2022.
+    \vspace{0.05cm}
+    \item First author of a paper published in \textbf{ML4H 2023}, co-located with NeurIPS 2023, focusing on information extraction from document images.
+    \vspace{0.05cm}
+    \item Achieved \textbf{Top Performer} in \textbf{TCS NQT} 2022.
+    \vspace{0.05cm}
+    % \item Went up to Regional level in \textbf{chess} Tournament organized by \textbf{Kendriya vidyalaya sangthan}.
+    % \vspace{0.07cm}
+    \item \textbf{Hobbies} : Cricket, Travelling, Chess, Music, Web Series
+\end{itemize}
+\end{document}
